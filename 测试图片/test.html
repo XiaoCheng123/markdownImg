@@ -1,0 +1,23 @@
+<html>
+
+<script src="https://cdn.jsdelivr.net/gh/AR-js-org/AR.js/aframe/build/aframe-ar.js"></script>
+  
+  <style>
+   
+  </style>
+  
+  <body style="margin : 0px; overflow: hidden;">
+      <a-scene embedded arjs>
+        <a-marker preset="custom" type="pattern" url="path/to/your/pattern-marker.patt">
+          <a-plane
+            position="0 0 0"
+            width="1"
+            height="1"
+            material="shader: flat; src: #card"
+          ></a-plane>
+        </a-marker>
+        <a-entity camera></a-entity>
+      </a-scene>
+      <div id="card">123</div>
+    </body>
+</html>
